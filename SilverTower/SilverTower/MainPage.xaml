@@ -16,7 +16,7 @@
                     <TapGestureRecognizer Tapped="OnMenuLineTapped" />
                 </control:MenuLine.GestureRecognizers>
             </control:MenuLine>
-            <control:MenuLine x:Name="eventLink" Name="Evênement innatendu" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2" >
+            <control:MenuLine x:Name="eventLink" Name="Evénement inattendu" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2" >
                 <control:MenuLine.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnMenuLineTapped" />
                 </control:MenuLine.GestureRecognizers>
