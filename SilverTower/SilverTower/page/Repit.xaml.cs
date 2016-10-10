@@ -17,9 +17,9 @@ namespace SilverTower.page
             InitializeComponent();
 
             _stack = new StackLayout();
-            for (int i = 0; i < Game.Instance.NbPlayers; i++)
+            foreach (string hero in Game.Instance.Heroes)
             {
-                var item = new RepitItem();
+                var item = new RepitItem(hero);
                 item.RepitActionChoosen += OnRepitActionChoosen;
                 _repitItems.Add(item);
                 _stack.Children.Add(item);

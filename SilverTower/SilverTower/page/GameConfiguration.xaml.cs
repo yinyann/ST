@@ -24,5 +24,10 @@ namespace SilverTower.page
         {
             await Navigation.PopAsync();
         }
+
+        async void ShowHeroes(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new Heroes());
+        }
     }
 }

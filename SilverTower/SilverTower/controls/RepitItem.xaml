@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SilverTower.controls.RepitItem">
     <StackLayout x:Name="stackContent" Orientation="Horizontal">
-        <Label x:Name="lblJoueur" Text="Joueur" VerticalOptions="CenterAndExpand" />
-        <Button Text="Soin" Clicked="SoinClicked" />
-        <Button Text="Fouille" Clicked="FouilleClicked" />
+        <Image Source="{Binding HeroPictureName}" HeightRequest="85" />
+        <Button Text="Soin" Clicked="SoinClicked" HorizontalOptions="End" />
+        <Button Text="Fouille" Clicked="FouilleClicked" HorizontalOptions="End" />
     </StackLayout>
 </ContentView>

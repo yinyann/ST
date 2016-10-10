@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SilverTower.models;
+using SilverTower.viewmodels;
+using System;
 using Xamarin.Forms;
 
 namespace SilverTower.controls
@@ -11,9 +13,18 @@ namespace SilverTower.controls
 
         public EventHandler<RepitItem> RepitActionChoosen;
 
+        RepitItemViewModel _bindingContext = new RepitItemViewModel();
+
         public RepitItem()
         {
             InitializeComponent();
+        }
+
+        public RepitItem(string heroPictureName) : this()
+        {
+            _bindingContext.HeroPictureName = heroPictureName;
+            _bindingContext.HeroName = Game.AvailableHeroesDictionnary[heroPictureName];
+            BindingContext = _bindingContext;
         }
 
         void FouilleClicked(object sender, EventArgs args)

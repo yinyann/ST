@@ -11,4 +11,7 @@
 
         <Button Text="Valider" Clicked="Valider" />
     </StackLayout>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Heroes" Clicked="ShowHeroes"></ToolbarItem>
+    </ContentPage.ToolbarItems>
 </ContentPage>

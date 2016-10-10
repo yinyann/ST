@@ -6,7 +6,7 @@ namespace SilverTower.controls
 {
     public partial class PlayersResume : ContentView
     {
-        GameViewModel _bindingContext = new GameViewModel();
+        GameResumeViewModel _bindingContext = new GameResumeViewModel();
         public PlayersResume()
         {
             BindingContext = _bindingContext;
@@ -15,7 +15,7 @@ namespace SilverTower.controls
 
         async void ChangePlayersClicked(object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new page.GameConfiguration());
+            await Navigation.PushAsync(new page.Heroes());
         }
     }
 }
