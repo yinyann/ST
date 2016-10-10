@@ -25,7 +25,7 @@ namespace SilverTower
                 case "Bestiaire":
                     await Navigation.PushAsync(new page.Bestiaire());
                     break;
-                case "Evênement innatendu":
+                case "Evénement inattendu":
                     await Navigation.PushAsync(new page.Evenement());
                     break;
                 case "Répit":
